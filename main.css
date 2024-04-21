@@ -5,6 +5,7 @@
 }
 body, input, textarea{
   font-family: "Roboto", sans-serif;
+  background-color: #000;
 }
 header,
 section h2,
@@ -13,28 +14,37 @@ form button{
     font-family: "Bungee", sans-serif;
     font-weight: normal;
   }
+
+header .container img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto
   
-header{
-  padding: 1rem;
-  background-color: #182C61;
-  color: #ecf0f1;
+}
+.articles{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.integrantes{
+  text-align: center;
+}
+.articles article img{
+  width: 100%;
+  border: 2px solid #fff
+}
+.articles article{
+  width: 30%;
+}
+.articles article p{
+  text-align: center;
 }
 
-header nav li{
-  display: inline;
-  margin-left: 1rem;
-  font-size: 1rem;
-}
-header nav li a{
-  color: #ecf0f1;
-  text-decoration: none;
-}
-.container{
+.container {
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
 }
-header .container,
 section .container{
   display: flex;
   align-items: center;
@@ -50,9 +60,10 @@ section .container{
 section .container{
   align-items: flex-start;
  }
+
  section{
    padding: 1.5rem;
-   color: #182C61;
+   color: #fff;
  }
  section h2{
    margin-bottom: 1rem;
@@ -62,11 +73,13 @@ section .container{
  section p{
    margin-bottom: 0.5rem;
  }
- .store-front{
-   margin-right: 2rem;
+ .banda{
+   margin-right: 1rem;
+   border: 5px solid #fff;
+
  }
  .social-links img{
-  height: 1.5rem;
+  height: 1.7rem;
  }
  .social-links li{
   display: inline;
@@ -75,13 +88,16 @@ section .container{
  .social-links li a{
   text-decoration: none;
  }
+
  #contact .container{
-  display: block;
+ display: inline;
  }
+ 
  .contact-methods{
   display: flex;
   justify-content: space-between;
  }
+ 
  form input,
  form textarea,
  form button{
@@ -97,19 +113,25 @@ section .container{
   margin-bottom: 1rem;
  }
  form button{
-  background-color: #182C61;
-  color: #ecf0f1;
-  border: none;
+  background-color: #fff;
+  color: #000;
+  border-radius: 4px;
   cursor: pointer;
  }
  form button:hover{
-  background-color: #2d4892;
+  background-color: #646569;
  }
  input:focus, textarea:focus{
-  outline-color: #182C61;
+  outline-color: #646569;
  }
  footer{
-  background-color: #182C61;
+  background-color: #232324;
   color: #ecf0f1;
   padding: 1rem;
  }
+form input, textarea{
+  color: #fff;
+}
+
+
+ 
