@@ -132,6 +132,9 @@ section .container{
 form input, textarea{
   color: #fff;
 }
+footer .container p{
+  text-align: center;
+}
 
 
  
